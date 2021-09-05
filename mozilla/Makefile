@@ -13,6 +13,7 @@ FILES = $(shell $(FIND) . \( -name \*.rdf -o -name \*.manifest -o -name \*.xpt -
 all :
 
 package :
-	$(ZIP) $(BUILD_DIR)/just-restart-fx-tb.$(TIMESTAMP).xpi $(FILES)
+	mkdir -p $(BUILD_DIR)
+	$(ZIP) $(BUILD_DIR)/just-restart-sm.$(TIMESTAMP).xpi $(FILES)
 
 #
